@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Currency Converter</title>
+
+	<script type="text/javascript" src="js.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="form">
+
+		<div class="head">Currency Converter</div>
+
+		<form>
+			<input type="number" id="input" name="inp" oninput="convert()" autofocus="">
+			&nbsp;
+			<select name="inp-cur" id="inp-cur" onchange="inp_cur()">
+				<option value="inr">Indian Rupee</option>
+				<option value="sgd">Singapore Dollar</option>
+				<option value="usd">Unites States Dollar</option>
+			</select>
+
+			<br><br><br>
+
+			<input type="number" name="out" id="output" readonly>
+			&nbsp;
+			<select name="inp-cur" id="out-cur" onchange="out_cur()">
+				<option id="opt" value="inr">Indian Rupee</option>
+				<option id="opt" value="sgd">Singapore Dollar</option>
+				<option id="opt" value="usd">Unites States Dollar</option>
+			</select>
+
+		</form>
+	</div>
+
+</body>
+</html>
